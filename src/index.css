@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: white;
+  padding: 0 2rem;
+}
+
+.special-btn::before,
+.special-btn::after {
+  --border-radius: 2rem;
+  content: "";
+  position: absolute;
+  width: var(--border-radius);
+  height: var(--border-radius);
+  right: 0;
+}
+.special-btn::before {
+  top: calc(var(--border-radius) * -1);
+  border-radius: 0 0 100vw 0;
+  box-shadow: 8px 8px 0 0px white;
+}
+.special-btn::after {
+  bottom: calc(var(--border-radius) * -1);
+  border-radius: 0 100vw 0 0;
+  box-shadow: 8px -8px 0 0px white;
+}
+
+.curve--product--card::before,
+.curve--product--card::after {
+  --border-radius: 2rem;
+  content: "";
+  position: absolute;
+  width: var(--border-radius);
+  height: var(--border-radius);
+  /* background: white; */
+  bottom: 50%;
+}
+
+.curve--product--card::after {
+  right: calc(var(--border-radius) * -1);
+  border-radius: 0 0 0 100vw;
+  box-shadow: -10px 10px 0 10px white;
+}
+
+.curve--product--card::before {
+  left: calc(var(--border-radius) * -1);
+  border-radius: 0 0 100vw 0;
+  box-shadow: 10px 10px 0 10px white;
+}
+
+
+.footer--btn::after,
+.footer--btn::before {
+  --border-radius: 2rem;
+  content: "";
+  position: absolute;
+  width: var(--border-radius);
+  height: var(--border-radius);
+  background: #F5F5F5;
+}
+.footer--btn::before {
+  left: calc(var(--border-radius) * -1);
+  border-radius: 0 100vw 0 0;
+  box-shadow: 10px -10px 0 10px white;
+}
+.footer--btn::after {
+  right: calc(var(--border-radius) * -1);
+  border-radius: 100vw 0 0 0;
+  box-shadow: -10px -10px 0 10px white;
+}
