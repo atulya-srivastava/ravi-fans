@@ -50,7 +50,6 @@ body {
   box-shadow: 10px 10px 0 10px white;
 }
 
-
 .footer--btn::after,
 .footer--btn::before {
   --border-radius: 2rem;
@@ -58,7 +57,7 @@ body {
   position: absolute;
   width: var(--border-radius);
   height: var(--border-radius);
-  background: #F5F5F5;
+  background: #f5f5f5;
 }
 .footer--btn::before {
   left: calc(var(--border-radius) * -1);

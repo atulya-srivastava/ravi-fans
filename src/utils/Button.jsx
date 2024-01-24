@@ -10,11 +10,13 @@ const Button = ({ type }) => {
       case "up-right":
         return <FiArrowUpRight size={"2em"} color="white" />;
       default:
-        return "😑"
+        return "😑";
     }
   };
   return (
-    <button className="bg-[#FF1F25] p-3 rounded-full relative z-10">{arrow()}</button>
+    <button className="bg-[#FF1F25] p-3 rounded-full relative z-10">
+      {arrow()}
+    </button>
   );
 };
 

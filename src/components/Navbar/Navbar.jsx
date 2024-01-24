@@ -6,7 +6,7 @@ import { FaYoutube as YoutubeIcon } from "react-icons/fa";
 import Logo from "/images/Logo.svg";
 
 const Navbar = () => {
-  const activeStyle = ({ isActive }) => isActive && "text-[#FF1F25]"
+  const activeStyle = ({ isActive }) => isActive && "text-[#FF1F25]";
   return (
     <div className="w-full bg-[#F5F5F5] flex justify-between items-center rounded-3xl p-4">
       <div>
@@ -14,52 +14,31 @@ const Navbar = () => {
       </div>
 
       <div className="flex justify-evenly items-center bg-white rounded-full px-2 py-4 w-[50%] text-[#6A6C78]">
-        <NavLink
-          to={"/"}
-          className={activeStyle}
-        >
+        <NavLink to={"/"} className={activeStyle}>
           Home
         </NavLink>
 
-        <NavLink
-          to={"/about"}
-          className={activeStyle}
-        >
+        <NavLink to={"/about"} className={activeStyle}>
           About
         </NavLink>
 
-        <NavLink
-          to={"/manufacturing"}
-          className={activeStyle}
-        >
+        <NavLink to={"/manufacturing"} className={activeStyle}>
           Manufacturing
         </NavLink>
 
-        <NavLink
-          to={"/products"}
-          className={activeStyle}
-        >
+        <NavLink to={"/products"} className={activeStyle}>
           Products
         </NavLink>
 
-        <NavLink
-          to={"/dealer"}
-          className={activeStyle}
-        >
+        <NavLink to={"/dealer"} className={activeStyle}>
           Dealers
         </NavLink>
 
-        <NavLink
-          to={"/brochure"}
-          className={activeStyle}
-        >
+        <NavLink to={"/brochure"} className={activeStyle}>
           Brochure
         </NavLink>
 
-        <NavLink
-          to={"/contact-us"}
-          className={activeStyle}
-        >
+        <NavLink to={"/contact-us"} className={activeStyle}>
           Contact Us
         </NavLink>
       </div>
