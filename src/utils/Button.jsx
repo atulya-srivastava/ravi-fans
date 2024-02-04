@@ -14,7 +14,7 @@ const Button = ({ type }) => {
     }
   };
   return (
-    <button className="bg-[#FF1F25] p-3 rounded-full relative z-10">
+    <button className="bg-[#FF1F25] p-2 rounded-full relative z-10">
       {arrow()}
     </button>
   );
