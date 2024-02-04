@@ -1,12 +1,12 @@
 // TemplateSlide.js
 
 import React from "react";
-import "../../index.css";
+// import "../../index.css";
 
 const TemplateSlide = ({ imageUrl, title }) => {
   return (
-    <div className="template-slide">
-      <img src={imageUrl} alt={title} className="template-image" />
+    <div className="flex justify-center items-center">
+      <img src={imageUrl} alt={title} className="rounded-3xl" />
     </div>
   );
 };
