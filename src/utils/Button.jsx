@@ -2,7 +2,7 @@ import React from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 import { FiArrowUp } from "react-icons/fi";
 
-const Button = ({ type }) => {
+const Button = ({ type, handleClick }) => {
   const arrow = () => {
     switch (type) {
       case "up":
@@ -14,7 +14,10 @@ const Button = ({ type }) => {
     }
   };
   return (
-    <button className="bg-[#FF1F25] p-2 rounded-full relative z-10">
+    <button
+      className="bg-[#FF1F25] p-2 rounded-full relative z-10"
+      onClick={handleClick}
+    >
       {arrow()}
     </button>
   );
