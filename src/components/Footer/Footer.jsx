@@ -17,11 +17,15 @@ const Footer = () => {
         <Button type={"up"} handleClick={scrollToTop} />
       </div>
 
-      <div className="flex justify-center items-center">
+      <div className="flex flex-col lg:flex-row justify-center items-center text-xs lg:text-base">
         <div>
-          <img src="/images/Logo.svg" alt="company logo" />
+          <img
+            src="/images/Logo.svg"
+            alt="company logo"
+            className="w-[50%] lg:w-auto mx-auto lg:mx-0"
+          />
         </div>
-        <div className="mx-auto flex justify-evenly items-center w-[60%] text-[#6A6C78]">
+        <div className="mx-auto flex justify-evenly items-center w-full lg:w-[60%] text-[#6A6C78] mt-2">
           <NavLink>About Us</NavLink>
           <NavLink>About Us</NavLink>
           <NavLink>About Us</NavLink>
@@ -30,22 +34,22 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="w-[95%] h-[2px] rounded-full bg-[#6A6C7833] mt-16 mx-auto"></div>
+      <div className="w-[95%] h-[2px] rounded-full bg-[#6A6C7833] mt-10 lg:mt-16 mx-auto"></div>
 
-      <div className="flex justify-between items-center mt-5">
-        <p className="font-[500] text-[#6A6C78]">{`© Copyright Ravi Fans pvt Ltd. ${getCurrentYear()}`}</p>
-        <div className="flex justify-center items-center">
-          <Link className="bg-white p-4 rounded-full text-lg text-[#FF1F25]">
+      <div className="flex flex-col lg:flex-row justify-between items-center mt-5">
+        <p className="font-[500] text-[#6A6C78] text-xs lg:text-base">{`© Copyright Ravi Fans pvt Ltd. ${getCurrentYear()}`}</p>
+        <div className="flex justify-center items-center my-3 lg:mt-0">
+          <Link className="bg-white p-2 lg:p-4 rounded-full text-xs lg:text-lg text-[#FF1F25]">
             <FbIcon />
           </Link>
-          <Link className="bg-white p-4 rounded-full text-lg text-[#FF1F25] mx-5">
+          <Link className="bg-white p-2 lg:p-4 rounded-full text-xs lg:text-lg text-[#FF1F25] mx-5">
             <InstaIcon />
           </Link>
-          <Link className="bg-white p-4 rounded-full text-lg text-[#FF1F25]">
+          <Link className="bg-white p-2 lg:p-4 rounded-full text-xs lg:text-lg text-[#FF1F25]">
             <YtIcon />
           </Link>
         </div>
-        <div className="flex justify-center items-center font-[500]">
+        <div className="flex justify-center items-center font-[500] text-xs lg:text-base">
           <p>Terms & Conditions</p>
           <div className="w-[2px] h-6 mx-2 bg-[#6A6C7833]"></div>
           <p>Cookie Policy</p>
