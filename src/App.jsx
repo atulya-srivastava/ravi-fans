@@ -13,11 +13,22 @@ import Products from "./components/Products/Products";
 import Dealer from "./components/Dealer/Dealer";
 import Brochure from "./components/Brochure/Brochure";
 import ContactUs from "./components/ContactUs/ContactUs";
+import Categories from "./components/Home/Categories/Categories";
+import CategoryOne from "./components/Home/Categories/CategoryOne";
+import CategoryTwo from "./components/Home/Categories/CategoryTwo";
+import CategoryThree from "./components/Home/Categories/CategoryThree";
+import CategoryFour from "./components/Home/Categories/CategoryFour";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
-      <Route index element={<Home />} />
+      <Route path="/" element={<Home />}>
+        {/* In order to navigate to different categories in the Categories section of the Home page, I am nesting the individual categories page inside the Home component, the Outlet will be recieved in the Categories component and when their respective Links will be clicked the user will be able to see different categories */}
+        <Route index element={<CategoryOne />} />
+        <Route path="category-2" element={<CategoryTwo />} />
+        <Route path="category-3" element={<CategoryThree />} />
+        <Route path="category-4" element={<CategoryFour />} />
+      </Route>
       <Route path="about" element={<About />} />
       <Route path="manufacturing" element={<Manufacturing />} />
       <Route path="products" element={<Products />} />
