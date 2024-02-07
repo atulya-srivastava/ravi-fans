@@ -18,7 +18,7 @@ const VideoSection = () => {
       </div>
       <div className="lg:w-[50%] flex flex-col items-center lg:items-start justify-center">
         <div>
-          <h1 className="mt-5 lg:mt-0 text-2xl lg:text-5xl font-bold lg:max-w-[60%]">
+          <h1 className="mt-5 lg:mt-0 text-2xl lg:text-5xl font-bold lg:max-w-[40rem]">
             Crafting Superior Fans for Modern Living
           </h1>
         </div>
