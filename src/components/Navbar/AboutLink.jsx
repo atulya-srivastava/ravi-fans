@@ -6,14 +6,20 @@ const AboutLink = () => {
   const activeStyle = ({ isActive }) => isActive && "text-[#FF1F25]";
 
   const [panelOpen, setPanelOpen] = React.useState(false);
-  const togglePanel = () => {
+  const openPanel = () => {
     setPanelOpen(true);
+    document.body.style.overflowY = "hidden";
   };
 
-  React.useEffect(() => {
-    document.body.style.overflowY = "hidden";
-    return () => (document.body.style.overflowY = "scroll");
-  }, []);
+  const closePanel = () => {
+    setPanelOpen(false);
+    document.body.style.overflowY = "scroll";
+  };
+
+  //   React.useEffect(() => {
+  //     document.body.style.overflowY = "hidden";
+  //     return () => (document.body.style.overflowY = "scroll");
+  //   }, []);
 
   return (
     <div>
@@ -25,7 +31,7 @@ const AboutLink = () => {
             ? "text-[#FF1F25]"
             : ""
         }
-        onClick={togglePanel}
+        onClick={openPanel}
       >
         About
       </button>
@@ -33,18 +39,14 @@ const AboutLink = () => {
         <>
           <div
             className="fixed top-0 left-0 right-0 bottom-0 bg-[#00000080]"
-            onClick={() => setPanelOpen(false)}
+            onClick={closePanel}
           ></div>
           <div
             className={
               "absolute flex flex-col justify-center items-start top-[100%] left-[15%] border border-slate-400 rounded-md p-4 z-10 bg-black shadow-md backdrop-filter backdrop-blur-lg bg-opacity-10 text-white"
             }
           >
-            <NavLink
-              to={"/about"}
-              className={activeStyle}
-              onClick={() => setPanelOpen(false)}
-            >
+            <NavLink to={"/about"} className={activeStyle} onClick={closePanel}>
               {" "}
               About Ravi Fans
             </NavLink>
@@ -52,7 +54,7 @@ const AboutLink = () => {
             <NavLink
               to={"/directors-message"}
               className={activeStyle}
-              onClick={() => setPanelOpen(false)}
+              onClick={closePanel}
             >
               Director's Message
             </NavLink>
@@ -60,7 +62,7 @@ const AboutLink = () => {
             <NavLink
               to={"/gallery"}
               className={activeStyle}
-              onClick={() => setPanelOpen(false)}
+              onClick={closePanel}
             >
               Gallery
             </NavLink>
