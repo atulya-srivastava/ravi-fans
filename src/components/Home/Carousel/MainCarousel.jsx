@@ -26,7 +26,7 @@ const MainCarousel = () => {
   };
 
   return (
-    <div className="my-10">
+    <div className="my-10 -z-10">
       <Slider {...settings} className="mx-auto">
         {templates.map((template, index) => (
           <TemplateSlide key={index} imageUrl={template.imageUrl} />
