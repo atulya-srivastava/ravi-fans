@@ -7,6 +7,7 @@ import CategoryOne from "./Categories/CategoryOne";
 import CategoryTwo from "./Categories/CategoryTwo";
 import CategoryThree from "./Categories/CategoryThree";
 import CategoryFour from "./Categories/CategoryFour";
+import ContactUs from "../ContactUs/ContactUs";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <MainCarousel />
       <VideoSection />
       <Categories />
+      <ContactUs />
     </>
   );
 };

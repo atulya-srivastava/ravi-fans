@@ -7,7 +7,7 @@ const ContactUs = () => {
       <div className="flex flex-col items-center gap-y-4 mt-4 lg:mx-8">
         <div className="flex flex-col items-center gap-y-4 mt-4 lg:container lg:flex-row ">
           <div className="w-full sm:text-center lg:text-left lg:ml-0">
-              <h1 className="text-4xl mx-8  font-bold lg:text-5xl lg:ml-0 lg:w-[60%]">
+              <h1 className="text-4xl mx-8 font-bold lg:text-5xl lg:ml-0 lg:w-[60%]">
                 Get In Touch With Ravi Fans
               </h1>
           </div>
@@ -21,9 +21,9 @@ const ContactUs = () => {
         </div>
         <div className="flex justify-center lg:container lg:my-8">
           <div className="hidden lg:block lg:w-1/2">
-            <img src="./images/poster3.png" className="lg:rounded-l-3xl lg:h-full" alt="poster" />
+            <img src="./images/Frame38.png" className="lg:rounded-l-3xl lg:w-full lg:h-full" alt="poster" />
           </div>
-          <div className="flex flex-col items-center bg-[#F5F5F5] m-6 p-4 rounded-3xl sm:w-5/6 lg:rounded-l-none lg:my-0 lg:ml-0 lg:w-1/2">
+          <div className="flex flex-col items-center justify-evenly bg-[#F5F5F5] m-6 p-4 rounded-3xl sm:w-5/6 lg:rounded-l-none lg:my-0 lg:ml-0 lg:w-1/2">
             <div>
               <img src="./images/Logo.svg" alt="" />
             </div>
