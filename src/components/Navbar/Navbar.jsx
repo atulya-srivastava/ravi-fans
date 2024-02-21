@@ -4,9 +4,11 @@ import { FaFacebookF as FacebookIcon } from "react-icons/fa";
 import { FaInstagram as InstaIcon } from "react-icons/fa";
 import { FaYoutube as YoutubeIcon } from "react-icons/fa";
 import Logo from "/images/Logo.svg";
+import AboutLink from "./AboutLink";
 
 const Navbar = () => {
   const activeStyle = ({ isActive }) => isActive && "text-[#FF1F25]";
+
   const [open, setOpen] = React.useState(false);
   const handleMenuToggle = () => {
     setOpen(true);
@@ -19,14 +21,15 @@ const Navbar = () => {
           <img src={Logo} alt="Ravi fans logo" />
         </div>
 
-        <div className="flex justify-evenly items-center bg-white rounded-full px-1 py-3 w-[50%] text-[#6A6C78]">
+        <div className="flex justify-evenly items-center bg-white rounded-full px-1 py-3 w-[50%] text-[#6A6C78] relative">
           <NavLink to={"/"} className={activeStyle}>
             Home
           </NavLink>
 
-          <NavLink to={"/about"} className={activeStyle}>
+          {/* <NavLink to={"/about"} className={activeStyle}>
             About
-          </NavLink>
+          </NavLink> */}
+          <AboutLink />
 
           <NavLink to={"/manufacturing"} className={activeStyle}>
             Manufacturing
