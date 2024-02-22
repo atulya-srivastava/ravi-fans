@@ -1,5 +1,5 @@
 import React from "react";
-
+    
 const About = () => {
   return (
     <div className="bg-white flex flex-col items-center justify-center pt-32">
