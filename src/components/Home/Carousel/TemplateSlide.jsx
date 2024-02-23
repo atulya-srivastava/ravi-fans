@@ -6,7 +6,11 @@ import React from "react";
 const TemplateSlide = ({ imageUrl, title }) => {
   return (
     <div className="flex justify-center items-center">
-      <img src={imageUrl} alt={title} className="rounded-3xl" />
+      <img
+        src={imageUrl}
+        alt={title}
+        className="rounded-3xl h-[30rem] sm:h-auto"
+      />
     </div>
   );
 };
