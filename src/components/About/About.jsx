@@ -1,5 +1,5 @@
 import React from "react";
-    
+
 const About = () => {
   return (
     <div className="bg-white flex flex-col items-center justify-center pt-32">
@@ -13,7 +13,7 @@ const About = () => {
           alt="Ravi Fans Poster"
         />
       </div>
-      <div className="w-full max-w-[1320px] bg-[#F5F5F5] py-20 px-10 lg:px-20 rounded-lg mb-8">
+      <div className="w-full max-w-[1320px] bg-[#F5F5F5] py-20 px-10 lg:px-20 rounded-xl mb-8">
         <div className="max-w-[1320px] mx-auto text-[#6A6C78] text-lg lg:text-xl font-medium font-poppins">
           Ravi Fans launched in 1975, is one of the leading manufacturers and
           marketers of Ceiling, Table, Pedestal, Cabin, wall & exhaust fans.
@@ -31,7 +31,8 @@ const About = () => {
           quality to every part of the country.
         </div>
       </div>
-      <div className="w-full max-w-[1320px] bg-white py-20 px-10 lg:px-20 rounded-lg mb-8">
+
+      <div className="w-full max-w-[1320px] bg-[#F5F5F5] py-20 px-10 lg:px-20 rounded-xl mb-8">
         <div className="max-w-[1320px] mx-auto text-[#6A6C78] text-lg lg:text-xl font-medium font-poppins">
           <h2 className="text-3xl font-semibold mb-4">Vision</h2>
           <ul className="list-disc pl-8 mb-6">

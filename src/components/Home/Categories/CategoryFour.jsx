@@ -3,7 +3,7 @@ import ProductCard from "./../../../utils/ProductCard";
 
 const CategoryFour = () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-evenly items-center w-full my-5">
+    <div className="grid sm:grid-cols-3 gap-2 lg:gap-10 place-items-center">
       <ProductCard img={"/ceiling-fan.png"} />
       <ProductCard img={"/ceiling-fan.png"} />
       <ProductCard img={"/ceiling-fan.png"} />
