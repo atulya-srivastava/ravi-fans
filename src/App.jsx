@@ -18,6 +18,7 @@ import CategoryOne from "./components/Home/Categories/CategoryOne";
 import CategoryTwo from "./components/Home/Categories/CategoryTwo";
 import CategoryThree from "./components/Home/Categories/CategoryThree";
 import CategoryFour from "./components/Home/Categories/CategoryFour";
+import DirectorsMessage from "./components/Directors Message/DirectorsMessage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -30,6 +31,7 @@ const router = createBrowserRouter(
         <Route path="category-4" element={<CategoryFour />} />
       </Route>
       <Route path="about" element={<About />} />
+      <Route path="directors-message" element={<DirectorsMessage />} />
       <Route path="manufacturing" element={<Manufacturing />} />
       <Route path="products" element={<Products />} />
       <Route path="dealer" element={<Dealer />} />

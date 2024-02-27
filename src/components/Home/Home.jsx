@@ -9,6 +9,7 @@ const Home = () => {
       <MainCarousel />
       <VideoSection />
       <Categories />
+      <ContactUs />
     </>
   );
 };
