@@ -75,8 +75,8 @@ body {
 }
 
 .directors-div::before {
-  background: url("/public/images/Directors Message/Vector.svg") no-repeat
-    center center/cover;
+  background: url("/images/Directors Message/Vector.svg") no-repeat center
+    center/cover;
   content: "";
   position: absolute;
   width: 150px;
@@ -86,7 +86,7 @@ body {
 }
 
 .directors-div::after {
-  background: url("/public/images/Directors Message/Group.svg") no-repeat center
+  background: url("/images/Directors Message/Group.svg") no-repeat center
     center/cover;
   content: "";
   position: absolute;
