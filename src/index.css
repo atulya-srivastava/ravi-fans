@@ -73,3 +73,24 @@ body {
   border-radius: 100vw 0 0 0;
   box-shadow: -10px -10px 0 10px white;
 }
+
+.directors-div::before{
+  background: url("/public/images/Directors Message/Vector.svg") no-repeat center center/cover;
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: calc(12% + 5px);
+  left: calc(8% - 6px);
+}
+
+.directors-div::after{
+  background: url("/public/images/Directors Message/Group.svg") no-repeat center center/cover;
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  bottom: calc(6% + 2px);
+  left: calc(38% - 2px);
+  z-index: -1;
+}
