@@ -6,12 +6,12 @@ function DirectorsMessageCarousel(props) {
       <h1 className="text-5xl mx-8 font-bold">Director's Message</h1>
       <div className="flex my-8">
         <div className="w-1/2 h-[600px] -mr-32 flex justify-center items-center directors-div">
-            <img
-              src={props.img}
-              alt=""
-              className="w-2/3 h-4/5"
-              style={{filter: "drop-shadow(0px 0px 80px #ffc2c2)"}}
-            />
+          <img
+            src={props.img}
+            alt=""
+            className="w-2/3 h-4/5"
+            style={{ filter: "drop-shadow(0px 0px 80px #ffc2c2)" }}
+          />
         </div>
         <div className="m-8 flex flex-col justify-around w-1/2">
           <div>

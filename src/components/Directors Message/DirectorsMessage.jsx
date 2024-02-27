@@ -74,17 +74,17 @@ function DirectorsMessage() {
 
   return (
     <>
-        <Slider {...settings}>
-          {dms.map((dms) => (
-            <DirectorsMessageCarousel
-              key={dms.name}
-              img={dms.img}
-              name={dms.name}
-              position={dms.position}
-              desc={dms.desc}
-            />
-          ))}
-        </Slider>
+      <Slider {...settings}>
+        {dms.map((dms) => (
+          <DirectorsMessageCarousel
+            key={dms.name}
+            img={dms.img}
+            name={dms.name}
+            position={dms.position}
+            desc={dms.desc}
+          />
+        ))}
+      </Slider>
     </>
   );
 }

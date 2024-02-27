@@ -74,8 +74,9 @@ body {
   box-shadow: -10px -10px 0 10px white;
 }
 
-.directors-div::before{
-  background: url("/public/images/Directors Message/Vector.svg") no-repeat center center/cover;
+.directors-div::before {
+  background: url("/public/images/Directors Message/Vector.svg") no-repeat
+    center center/cover;
   content: "";
   position: absolute;
   width: 150px;
@@ -84,8 +85,9 @@ body {
   left: calc(8% - 6px);
 }
 
-.directors-div::after{
-  background: url("/public/images/Directors Message/Group.svg") no-repeat center center/cover;
+.directors-div::after {
+  background: url("/public/images/Directors Message/Group.svg") no-repeat center
+    center/cover;
   content: "";
   position: absolute;
   width: 150px;
