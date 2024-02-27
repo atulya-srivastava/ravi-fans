@@ -10,7 +10,7 @@ const Layout = () => {
         <Navbar />
       </div>
       <Outlet />
-      <div className="mt-auto -z-10">
+      <div className="mt-auto">
         <Footer />
       </div>
     </div>

@@ -38,12 +38,12 @@ const AboutLink = () => {
       {panelOpen && (
         <>
           <div
-            className="fixed top-0 left-0 right-0 bottom-0 bg-[#00000080]"
+            className="fixed top-0 left-0 right-0 bottom-0 bg-[#00000080] z-20"
             onClick={closePanel}
           ></div>
           <div
             className={
-              "absolute flex flex-col justify-center items-start top-[100%] left-[15%] border border-slate-400 rounded-md p-4 z-10 bg-black shadow-md backdrop-filter backdrop-blur-lg bg-opacity-10 text-white"
+              "absolute flex flex-col justify-center items-start top-[100%] left-[15%] border border-slate-400 rounded-md p-4 z-20 bg-black shadow-md backdrop-filter backdrop-blur-lg bg-opacity-10 text-white"
             }
           >
             <NavLink to={"/about"} className={activeStyle} onClick={closePanel}>
