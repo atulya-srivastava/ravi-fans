@@ -30,13 +30,13 @@ const router = createBrowserRouter(
         <Route path="category-3" element={<CategoryThree />} />
         <Route path="category-4" element={<CategoryFour />} /> */}
       </Route>
-      <Route path="about" element={<About />} />
-      <Route path="directors-message" element={<DirectorsMessage />} />
-      <Route path="manufacturing" element={<Manufacturing />} />
-      <Route path="products" element={<Products />} />
-      <Route path="dealer" element={<Dealer />} />
-      <Route path="Brochure" element={<Brochure />} />
-      <Route path="contact-us" element={<ContactUs />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/directors-message" element={<DirectorsMessage />} />
+      <Route path="/manufacturing" element={<Manufacturing />} />
+      <Route path="/products" element={<Products />} />
+      <Route path="/dealer" element={<Dealer />} />
+      <Route path="/Brochure" element={<Brochure />} />
+      <Route path="/contact-us" element={<ContactUs />} />
     </Route>
   )
 );
