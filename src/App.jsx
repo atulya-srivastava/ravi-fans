@@ -23,7 +23,7 @@ import DirectorsMessage from "./components/Directors Message/DirectorsMessage";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
-      <Route path="/" element={<Home />}>
+      <Route index element={<Home />}>
         {/* In order to navigate to different categories in the Categories section of the Home page, I am nesting the individual categories page inside the Home component, the Outlet will be recieved in the Categories component and when their respective Links will be clicked the user will be able to see different categories */}
         {/* <Route index element={<CategoryOne />} />
         <Route path="category-2" element={<CategoryTwo />} />
