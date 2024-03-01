@@ -73,7 +73,7 @@ function DirectorsMessage() {
   };
 
   return (
-    <div className="-z-20">
+    <div className="-z-20 w-[90%] mx-auto">
       <Slider {...settings}>
         {dms.map((dms) => (
           <DirectorsMessageCarousel
