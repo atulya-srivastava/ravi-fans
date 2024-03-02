@@ -96,3 +96,19 @@ body {
   left: calc(38% - 2px);
   z-index: -1;
 }
+
+@media only screen and (max-width: 600px) {
+  .directors-div::before {
+    width: 100px;
+    height: 100px;
+    top: calc(8% + 5px);
+    left: calc(13% - 6px);
+    margin-top: 2rem;
+  }
+  .directors-div::after {
+    width: 100px;
+    height: 100px;
+    top: calc(30% + 5px);
+    left: calc(64% - 6px);
+  }
+}
